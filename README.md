@@ -14,3 +14,7 @@ Usarei linguagem web para implementar esse projeto, pois já trabalhei antes e s
 ### Entrega 3
 
 Diagrama de Classes feito de forma escrita em codigo
+
+
+
+| Tables | Are | Cool | |----------|:-------------:|------:| | col 1 is| left-aligned | $1600 |
