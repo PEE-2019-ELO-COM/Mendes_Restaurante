@@ -2,9 +2,9 @@
 
 ### Entrega 1
 
-|**Ideia:**| |Neste projeto sera criado uma plataforma para centralizar os pedidos dos clientes sem precisar do garçom|
+**Ideia:** Neste projeto sera criado uma plataforma para centralizar os pedidos dos clientes sem precisar do garçom
 
-Motivação: Atendimento lento e mal prestado pelos garçons em diversos restaurantes que ja frequentei, tanto em restaurantes mais caros quanto mais baratos.
+**Motivação:** Atendimento lento e mal prestado pelos garçons em diversos restaurantes que ja frequentei, tanto em restaurantes mais caros quanto mais baratos.
 
 ### Entrega 2
 
@@ -17,4 +17,4 @@ Diagrama de Classes feito de forma escrita em codigo
 
 
 
-| Tables | Are | Cool | |----------|:-------------:|------:| | col 1 is| left-aligned | $1600 |
+
