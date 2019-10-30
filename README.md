@@ -7,3 +7,8 @@ Motivação: Atendimento lento e mal prestado pelos garçons em diversos restaur
 ### Entrega 2
 
 Usarei linguagem web para implementar esse projeto, pois já trabalhei antes e sei como aplicar.
+
+
+### Entrega 3
+
+Diagrama de Classes feito de forma escrita em codigo
