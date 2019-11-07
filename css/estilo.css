@@ -27,7 +27,7 @@ font-size:35px;
 
 #mesa{
 position:absolute;
-right:50%;
+right:48%;
 top:30px;
 font-size:40px;
 }
@@ -80,7 +80,35 @@ box-sizing:border-box;
 	color:black;
 }
 
-#cardapio{
-right:50%;
+#cardapio_tabela{
+border-collapse:collapse;
+position:absolute;
+right:9%;
+top:180px;
 
+}
+
+#cardapio{
+border:solid 3px;
+padding:20px 400px 20px 400px;
+font-size:80px;
+}
+
+
+#makimono{
+border:solid 3px;
+
+
+}
+
+#sashimi{
+	border:solid 3px;
+}
+
+
+#titulos_cardapio{
+	font-weight:bolder;
+	color:#BF3A1D;
+	font-size:40px;
+	text-align:center;
 }
