@@ -7,6 +7,7 @@ color:white;
 
 @media only screen and (max-device-width: 900px) {
 header{width:100%;}
+footer{width:100%;}
 }
 
 /*Header*/
@@ -78,13 +79,16 @@ main{
 box-sizing:border-box;
 	margin:0px;
 	color:black;
+	/*position:relative;*/
+	height:820px;
+	position:relative;
 }
 
 #cardapio_tabela{
 border-collapse:collapse;
 position:absolute;
-right:9%;
-top:180px;
+right:8%;
+top:80px;
 
 }
 
@@ -111,4 +115,41 @@ border:solid 3px;
 	color:#BF3A1D;
 	font-size:40px;
 	text-align:center;
+}
+
+#itens{
+	font-size:20px;
+
+}
+
+#harumaki{
+	border:solid 3px;
+}
+
+#temaki{
+	border:solid 3px;
+}
+
+#tabelafinal{
+	border:solid 3px;
+}
+
+#enviar{
+	text-align:center;
+}
+
+
+
+
+
+
+
+/*Footer*/
+
+footer{
+background-color:#646362;
+height:100px;
+margin-top:10px;
+
+
 }
