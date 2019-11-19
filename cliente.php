@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8"> <!-- http-equ\iv=w"refresh" content="5"-->
+<meta charset="utf-8"> <!-- http-equiv="refresh" content="5"-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="css/estilo.css">
+<link rel="stylesheet" href="css/estilo_cliente.css">
 <!--<script type="text/javascript" src="js/script.js"></script>-->
 <title>Mesa 1</title>
 
@@ -51,6 +51,12 @@
 
 <body>
 
+	<?php
+	require_once("db.class.php");
+	$objDB=new db();                       
+	$link=$objDB->conecta_mysql();
+?>
+
 <header>
 
 	<bdi id="titulo">Su<bdi style="color:#ff3300">shi</bdi>ro</bdi> 
@@ -83,9 +89,12 @@
 
 
 <main>
+	
 	<table id="cardapio_tabela">
 		
-	
+	<form method="post" action="cliente.php">
+
+
 		<th id="cardapio" colspan="2">
 			Cardápio
 		</th>
@@ -93,7 +102,7 @@
 		<tr>
 			<td id="makimono"> <ul> <u id="titulos_cardapio">Makimonos:</u> 
 				<li id="itens">Philadelphia Salmão 
-					<select name="PhiSal">
+					<select name="1">
 						<option value="0"></option>
 						<option value="1">1</option>
 						<option value="2">2</option>
@@ -106,7 +115,7 @@
 
 
 				<li id="itens">Hot Philadelphia Salmão
-					<select name="HPhiSal">
+					<select name="2">
 						<option value="0"></option>
 						<option value="1">1</option>
 						<option value="2">2</option>
@@ -117,7 +126,7 @@
 
 				</li>
 				<li id="itens">Uramaki Salmão
-					<select name="UraSal">
+					<select name="3">
 						<option value="0"></option>
 						<option value="1">1</option>
 						<option value="2">2</option>
@@ -127,7 +136,7 @@
 						</select>
 				</li>
 				<li id="itens">Philadelphia Atum
-					<select name="PhiAtum">
+					<select name="4">
 						<option value="0"></option>
 						<option value="1">1</option>
 						<option value="2">2</option>
@@ -137,7 +146,7 @@
 						</select>
 				</li>
 				<li id="itens">Hot Philadelphia Atum
-					<select name="HPhiAtum" diasbled>
+					<select name="5" diasbled>
 						<option value="0"></option>
 						<option value="1">1</option>
 						<option value="2">2</option>
@@ -155,7 +164,7 @@
 			
 			<td id="sashimi"> <ul> <u id="titulos_cardapio">Sushi:</u> 
 				<li id="itens">Salmão
-					<select name="SushiSal" diasbled>
+					<select name="6" diasbled>
 						<option value="0"></option>
 						<option value="1">1</option>
 						<option value="2">2</option>
@@ -165,7 +174,7 @@
 						</select>
 				</li>
 				<li id="itens">Atum
-					<select name="SushiAtum" diasbled>
+					<select name="7" diasbled>
 						<option value="0"></option>
 						<option value="1">1</option>
 						<option value="2">2</option>
@@ -175,7 +184,7 @@
 						</select>
 				</li>
 				<li id="itens">Peixa Branco
-					<select name="SushiPB" diasbled>
+					<select name="8" diasbled>
 						<option value="0"></option>
 						<option value="1">1</option>
 						<option value="2">2</option>
@@ -188,7 +197,7 @@
 			</ul> 
 				<ul> <u id="titulos_cardapio">Sashimi:</u>
 				<li id="itens">Salmão
-					<select name="SashiSal" diasbled>
+					<select name="9" diasbled>
 						<option value="0"></option>
 						<option value="1">1</option>
 						<option value="2">2</option>
@@ -198,7 +207,7 @@
 						</select>
 				</li>
 				<li id="itens">Atum
-					<select name="SahiAtum" diasbled>
+					<select name="10" diasbled>
 						<option value="0"></option>
 						<option value="1">1</option>
 						<option value="2">2</option>
@@ -208,7 +217,7 @@
 						</select>
 				</li>
 				<li id="itens">Peixa Branco
-					<select name="SashiPB" diasbled>
+					<select name="11" diasbled>
 						<option value="0"></option>
 						<option value="1">1</option>
 						<option value="2">2</option>
@@ -233,7 +242,7 @@
 				<td id="harumaki"> <ul> <u id="titulos_cardapio">Harumaki:</u>
 
 					<li id="itens">Camarão
-						<select name="HaruCam" diasbled>
+						<select name="12" diasbled>
 							<option value="0"></option>
 							<option value="1">1</option>
 							<option value="2">2</option>
@@ -245,7 +254,7 @@
 
 
 					<li id="itens">Legumes
-						<select name="HaruLeg" diasbled>
+						<select name="13" diasbled>
 							<option value="0"></option>
 							<option value="1">1</option>
 							<option value="2">2</option>
@@ -258,7 +267,7 @@
 
 
 					<li id="itens">Salmão
-						<select name="HaruSal" diasbled>
+						<select name="14" diasbled>
 							<option value="0"></option>
 							<option value="1">1</option>
 							<option value="2">2</option>
@@ -279,7 +288,7 @@
 				<td id="temaki"> <ul> <u id="titulos_cardapio">Temaki:</u>
 
 					<li id="itens">Philadelphia Salmão
-						<select name="TemPhiSal" diasbled>
+						<select name="15" diasbled>
 							<option value="0"></option>
 							<option value="1">1</option>
 							<option value="2">2</option>
@@ -291,7 +300,7 @@
 
 
 					<li id="itens">Salmão
-						<select name="TemSal" diasbled>
+						<select name="16" diasbled>
 							<option value="0"></option>
 							<option value="1">1</option>
 							<option value="2">2</option>
@@ -304,7 +313,7 @@
 
 
 					<li id="itens">Hot Philadelphia Salmão
-						<select name="HTemPhiSal" diasbled>
+						<select name="17" diasbled>
 							<option value="0"></option>
 							<option value="1">1</option>
 							<option value="2">2</option>
@@ -342,14 +351,35 @@
 
 
 	<td id="enviar">
-		<input type="button" value="Fazer Pedido">
+		<button type="submit">Fazer Pedido</button>
 
 	</td>
 
 </tr>
 
-
+</form>
 	</table>
+
+
+
+
+
+<?php
+if(!empty($_POST)){
+
+foreach($_POST as $key=>$valor){
+
+if($valor<>0){
+
+$query="insert into pedidos(Numero,ID,quantidade)
+		values (1,'$key','$valor')";
+mysqli_query($link,$query);}
+}
+	
+}
+
+
+?>
 
 </main>
 
