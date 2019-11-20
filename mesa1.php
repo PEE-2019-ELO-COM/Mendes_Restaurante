@@ -92,7 +92,7 @@
 	
 	<table id="cardapio_tabela">
 		
-	<form method="post" action="cliente.php">
+	<form method="post" action="mesa1.php">
 
 
 		<th id="cardapio" colspan="2">

@@ -13,49 +13,59 @@
 
 
 <body>
-<?php
-	require_once("db.class.php");
-	$objDB=new db();                       
-	$link=$objDB->conecta_mysql();
-?>
+
+
+
+
+
 
 <?php
-$query="select pedidos.Numero,preco.nome,sum(pedidos.quantidade)
-from mesas
-inner join pedidos on pedidos.Numero=mesas.Numero
-inner join preco on preco.ID=pedidos.ID
-group by preco.nome
-order by pedidos.Numero";
+	require_once("pedido.class.php"); ///Chama a classe pedido
+	$obj=new mesas($link);
+?> <!--Declaracao Objeto-->
 
+<?php
+$query="select count(Numero)
+		from mesas";
 $sql=mysqli_query($link,$query);
+$nmesas=(int)mysqli_fetch_all($sql)[0][0];
+?> <!--Defini quantas mesas tem no restaurante-->
 
 
 
 
-if(mysqli_fetch_array($sql)){
-	$pedidos=mysqli_fetch_all($sql);
-	echo "<table> <th colspan='2'>Mesa ".$pedidos[0][0]."</th> </table>";
+<main>
+<?php
+$npedidos=0;///Conta numero de pedidos
 
+for($i=0;$i<$nmesas;$i++){
+	
 
+	if(!empty($a=$obj->getPedido($i+1))){
+		
+		foreach($a as $value){
+			$npedidos++;
+		}
 
-/*Tenho que continuar daqui*/
+		echo "<table> <th colspan='2'>Mesa ".($i+1)."</th>
+			<td>Nome do Produto</td>
+			<td>Quantidade</td>";
 
+		for($j=0;$j<$npedidos;$j++){
+			echo "<th><td>".$a[$j][0]."</td><td>".$a[$j][1]."</td></th>";
+		}
+		echo "</table>";
 
-
+	}
 }
 
 
 
-
-else{
-echo "<p>Nada</p>";
-
-}
 
 ?>
 
 
-
+</main>
 
 
 
