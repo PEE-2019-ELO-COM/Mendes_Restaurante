@@ -56,6 +56,7 @@
 <li>No terminal do SQL digite os seguintes <a href="Tutorial/DB.txt">códigos</a> que estão em um bloco de notas</li>
 <li>Baixe o projeto todo e colo que na pasta <b><ins>C:\xampp\htdocs</ins></b></li>
 <li>Agora é so utiliza o <b><ins>mesa1.php</ins></b> e <b><ins>mesa2.php</ins></b> para controlar a aba do cliente e <b><ins>dono.php</ins></b> para controlar a aba do controle de pedidos</li>
+ </ol>
 
 ## <a name="Diag">Diagrama de Classes</a>
 <p>Abaixo nos temos o diagrama de classes implementado em PHP para este projeto</p>
