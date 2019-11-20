@@ -67,7 +67,7 @@
 ## <a name="Diag">Diagrama de Classes</a>
 <p>Abaixo nos temos o diagrama de classes implementado em PHP para este projeto</p>
 <br>
-<img src="imagens/DiagramaDeClasses.png" alt="Diagrama de Classes">
+<img src="imagens/DiagramaDeClasses.png" alt="Diagrama de Classes" align="center">
 
 ## <a name="Fluxograma">Fluxograma</a>
 
