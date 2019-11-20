@@ -1,7 +1,7 @@
 
 # Serviço de Restaurante :plate_with_cutlery:
 
-![InterfaceGrafica](imagens/InterfaceGrafica1.png)
+![TelaInicial](imagens/TelaInicial.jpg)
 ## Motivação
 
 <p>Dos restaurantes que ja frequentei, a maioria dele possuía um garçom que ignorava as pessoas para não ser chamado ou então que prestava um mal atendimento.</p>
