@@ -3,22 +3,28 @@
 
 
 
+
 # Serviço de Restaurante :plate_with_cutlery:
 
 <img src="imagens/TelaInicial.jpg" width="100%" alt="Tela Inicial">
 
-# Sumario
-<a href="#Portab">Portabilidade</a>
+# Sumário
+<ol>
+<li><a href="#Moti">Portabilidade</a></li>
+<li><a href="#Impl">Implementação</a></li>
+<li><a herf="#Inter">Interface Gráfica</a></li>
+<li><a href="#Tuto">Tutorial</a></li>
+</ul>
 
-## Motivação
+## <a name="Moti">Motivação</a>
 
 <p>Dos restaurantes que ja frequentei, a maioria dele possuía um garçom que ignorava as pessoas para não ser chamado ou então que prestava um mal atendimento.</p>
 <p>Desta forma, surgiu a ideia de criar uma plataforma onde os clientes pudessem ter a opção de pedir a comida por algum aparelho sem a necessidade de um garçom vir a mesa para isso ou ate mesmo chamar o garçom por este mesmo aparelho</p>
 
-## Implementação
+## <a name="Impl">Implementação</a>
 <p>A linguagem escolhida para implementar esta plataforma foi a Web, sendo o principal motivo desta escolha o meu conhecimento prévio de como programar a interface gráfica, pois devido ao curto tempo e diversas outras demandas, não teria como aprender muita coisa para implementar as mínimas funcionalidades que desejava</p>
 
-## Interface Gráfica
+## <a name="Inter">Interface Gráfica</a>
 ### Aba do cliente
 <ul>Aqui nós temos a interface gráfica do cliente, onde ele pode:
 <li>A partir de um cardápio completo do restaurante, escolher a quantidade</li>
@@ -49,9 +55,9 @@
 ## <a name="Portab">Portabilidade</a>
 <p>Apesar de ter colocado um exemplo com Restaurante Japones e 2 mesas, podemos facilmente adaptar para quantas mesas quisermos e qualquer tipo de restaurante</p>
 
-## Tutorial para utilizar o projeto
+## <a name="Tuto">Tutorial para utilizar o projeto</a>
 <ol>Para poder utilizar este projeto tem que seguir o seguinte passo-a-passo:
 <li>Acesse o este <a href="https://www.apachefriends.org/pt_br/download.html">link</a> e instale o programa</li>
-<li>No terminal do SQL digite os seguintes <a href="Tutorial/DB.txt" download>códigos</a> que estão em um bloco de notas
+<li>No terminal do SQL digite os seguintes <a href="Tutorial/DB.txt">códigos</a> que estão em um bloco de notas
   <li>Agora é so utiliza o <b><ins>mesa1.php</ins></b> e <b><ins>mesa2.php</ins></b> para controlar a aba do cliente e <b><ins>dono.php</ins></b> para controlar a aba do controle de pedidos
 
