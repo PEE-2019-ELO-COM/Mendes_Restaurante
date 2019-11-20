@@ -25,7 +25,7 @@
 <bdi>Segue imagens</bdi>
 
 <img src="imagens/InterfaceGraficaCliente1.png">
-
+<br>
 <img src="imagens/InterfaceGraficaCliente2.png">
 
 
@@ -35,3 +35,9 @@
 <li>Emitir que o pedido ja esta pronto</li>
 <li>Caso todos os pedidos ja tenham sido emitidos, podemos clicar numa opção de finalizar o trabalho do dia, o qual salvará um arquivo com registro de todos os pedidos naquele dia e reproduzira na tela a quantidade de pedidos no dia e o quanto de dinheiro entrou</li>
 </ul>
+
+<img src="imagens/InterfaceGraficaDono1.png">
+<br>
+<img src="imagens/InterfaceGraficaDono2.png">
+<br>
+<img src="imagens/InterfaceGraficaDono3.png">
