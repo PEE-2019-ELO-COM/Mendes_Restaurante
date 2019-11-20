@@ -1,0 +1,99 @@
+body{
+box-sizing:border-box;
+margin:0px;
+color:white;
+}
+
+
+@media only screen and (max-device-width: 900px) {
+header{width:100%;}
+footer{width:100%;}
+}
+
+/* Header */
+
+header{
+position:relative;
+height:100px;
+background-color:#646362;
+margin:0px;
+}
+
+#titulo{
+position:absolute;
+left:0%;
+top:50px;
+font-size:35px;
+
+}
+
+#ControleDePedido{
+position:absolute;
+right:38%;
+top:30px;
+font-size:40px;
+}
+
+#subtitulo{
+position:absolute;
+right:0px;
+top:80px;
+font-size:16px;
+}
+
+
+/* Main */
+
+main{
+position:relative;
+box-sizing:border-box;
+	margin:0px;
+	color:black;
+	height:450px;
+}
+
+
+#tabelacentral{
+border:solid black 2px;
+width:100%;
+border-collapse:collapse;
+top:20px;
+empty-cells:show;
+
+
+}
+
+#colunamesa{
+	border:solid black 2px;
+	width:50%;
+	height:400px;
+	text-align:center;
+	padding-left:17%;
+	font-size:25px;
+}
+
+#tabelainterna{
+	border:solid black 1px;
+	border-collapse:collapse;
+}
+
+#colunainterna{
+	border:solid black 1px;
+}
+
+
+
+/* Footer */
+
+footer{
+	position:relative;
+	height:70px;
+	background-color:#646362;
+	margin:0px;
+}
+
+#botaofinalizar{
+	position:absolute;
+	right:45%;
+	top:48%;
+}

@@ -1,0 +1,84 @@
+body{
+box-sizing:border-box;
+margin:0px;
+color:white;
+}
+
+
+@media only screen and (max-device-width: 900px) {
+header{width:100%;}
+footer{width:100%;}
+}
+
+/* Header */
+
+header{
+position:relative;
+height:100px;
+background-color:#646362;
+margin:0px;
+}
+
+#titulo{
+position:absolute;
+left:0%;
+top:50px;
+font-size:35px;
+
+}
+
+#ResultadoDoDia{
+position:absolute;
+right:42%;
+top:30px;
+font-size:40px;
+}
+
+#subtitulo{
+position:absolute;
+right:0px;
+top:80px;
+font-size:16px;
+}
+
+
+/* Main */
+
+main{
+position:relative;
+box-sizing:border-box;
+	margin:0px;
+	color:black;
+	height:405px;
+}
+
+#Npedidostitulo{
+	position: absolute;
+	top:28%;
+	right:42%;
+	font-size:25px;
+}
+
+#Npedidos{
+	position:absolute;
+	top:38%;
+	right:51%;
+	font-size:45px;
+	color:#b30000;
+}
+
+
+/* Footer */
+
+footer{
+	position:relative;
+	height:70px;
+	background-color:#646362;
+	margin:0px;
+}
+
+#botaocomecar{
+	position:absolute;
+	right:49%;
+	top:48%;
+}

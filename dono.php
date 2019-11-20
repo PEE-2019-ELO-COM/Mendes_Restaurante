@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="utf-8" http-equiv="refresh" content="5">
-<link rel="stylesheet" href="css/estilo_dono.css">
+<meta charset="utf-8" http-equiv="refresh" content="1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/EstiloDono.css">
 <title>Controle de Pedidos</title>
 
 
@@ -20,22 +21,14 @@
 ?> <!--Declaracao Objeto-->
 
 <?php
-$query="select count(Numero)
-		from mesas";
-$sql=mysqli_query($link,$query);
-$nmesas=(int)mysqli_fetch_all($sql)[0][0];
+$nmesas=$obj->numerodemesas();
 ?> <!--Defini quantas mesas tem no restaurante-->
 
 <header>
 
-
-
-
-
-
-
-
-
+<bdi id="titulo">Su<bdi style="color:#ff3300">shi</bdi>ro</bdi> 
+	<bdi id="ControleDePedido">Controle de Pedidos</bdi>
+	<bdi id="subtitulo">Culinária Japonesa</bdi>
 
 </header>
 
@@ -53,55 +46,95 @@ $nmesas=(int)mysqli_fetch_all($sql)[0][0];
 
 
 <main>
+
+	<table id="tabelacentral"><tr>
 <?php
-$npedidos=0;///Conta numero de pedidos
+
+///Conta numero de pedidos
 
 for($i=0;$i<$nmesas;$i++){
 	
+	$npedidos[$i]=0;
+	echo "<td id='colunamesa'>";
 	$obj->setPedido($i+1);
 	if(!empty($a=$obj->getPedido())){
 		
 		foreach($a as $value){
-			$npedidos++;
+			$npedidos[$i]++;
 		}
 
-		echo "<table> <th colspan='2'>Mesa ".($i+1)."</th>
-			<tr><td>Nome do Produto</td>
+		echo "<table id='tabelainterna'> <th colspan='2'>Mesa ".($i+1)."</th>
+			<tr><td id='colunainterna'>Nome do Produto</td>
 			<td>Quantidade</td></tr>";
 
-		for($j=0;$j<$npedidos;$j++){
-			echo "<tr><td>".$a[$j][1]."</td><td>".$a[$j][2]."</td></tr>";
+		for($j=0;$j<$npedidos[$i];$j++){
+			echo "<tr><td id='colunainterna'>".$a[$j][1]."</td><td id='colunainterna'>".$a[$j][2]."</td></tr>";
 		}
-		$npedidos=0;
+		
+
+		echo "<th colspan='2'>
+			<form method='post' action='dono.php'>
+				<input type='hidden' name='exclui' value='".($i+1)."'>
+				<button type='submit'>Pedido Enviado</button>
+			</form>
+			</th>";
 		echo "</table>";
 
 	}
+
+
+
+	echo "</td>";
 }
 
-
-
-
 ?>
+
+
+
+</tr>
+<table>
+
+
 
 
 </main>
 
 
 
+<footer>
+
+<?php
+
+$test=0;
+
+foreach($npedidos as $key=>$value){
+	if($value<>0){
+	$test=1;
+	}
+}
+
+if($test==0){
+echo "<form action='dono_fim.php'>
+	<input type='hidden' name='zerardia' value='1'>
+	<button type='submit' id='botaofinalizar'>Finalizar Expediente</button>
+</form>";
+}
+
+
+?>
+
+</footer>
 
 
 
+<!-- Tratar o envio do pedido -->
+<?php
 
+if(!empty($_POST['exclui'])){
+	$obj->finalizapedido($_POST['exclui']);
+}
 
-
-
-
-
-
-
-
-
-
+?>
 
 
 

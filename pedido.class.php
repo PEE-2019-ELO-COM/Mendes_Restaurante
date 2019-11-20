@@ -54,8 +54,43 @@ class mesas{
 		return $conta;
 	}
 
+	public function numerodemesas(){
+		$query="select count(Numero)
+		from mesas";
+		$sql=mysqli_query($this->link,$query);
+		return (int)mysqli_fetch_all($sql)[0][0];
+	}
 
 
+	public function finalizapedido($i){
+		$query="delete from pedidos
+				where Numero='$i'";
+		mysqli_query($this->link,$query);
+	}
+
+	public function zerardia(){
+		$query="alter table pedidos
+				auto_increment=".'1';
+		mysqli_query($this->link,$query);
+	}
+
+	public function totalpedidos(){
+		$query="insert into pedidos(ID,Numero,quantidade)
+				values (1,1,999)";
+		mysqli_query($this->link,$query);
+		$query="select max(contagem)
+				from pedidos";
+		$sql=mysqli_query($this->link,$query);
+		$a=(int)mysqli_fetch_array($sql)[0];
+		$a-=1;
+		$query="delete from pedidos
+				where quantidade=999";
+		mysqli_query($this->link,$query);
+		$query="alter table pedidos
+				auto_increment=".$a;
+		mysqli_query($this->link,$query);
+		return ($a);
+	}
 }
 
 ?>

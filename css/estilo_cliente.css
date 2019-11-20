@@ -19,7 +19,7 @@ margin:0px;
 }
 
 #titulo{
-	position:absolute;
+position:absolute;
 left:0%;
 top:50px;
 font-size:35px;
@@ -79,7 +79,6 @@ main{
 box-sizing:border-box;
 	margin:0px;
 	color:black;
-	/*position:relative;*/
 	height:820px;
 	position:relative;
 }
