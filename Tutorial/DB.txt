@@ -1,0 +1,20 @@
+create database restaurante;
+
+create table mesas(
+	Numero int primary key auto_increment);
+
+insert into mesas
+values (1),(2);
+
+create table preco(
+	ID int primary key auto_increment,
+	nome var(50),
+	preco float);
+
+create table pedidos(
+	contagem int primary key auto_increment,
+	Numero int,
+	ID int,
+	quantidade int,
+	Foreign Key (Numero) references mesas(Numero),
+	Foreign Key (ID) references preco(ID));	
