@@ -51,7 +51,7 @@
 
 ## Tutorial para utilizar o projeto
 <ol>Para poder utilizar este projeto tem que seguir o seguinte passo-a-passo:
-<li>Acesse o este <a href="https://www.apachefriends.org/pt_br/download.html">link</a> e instale o programa</li>
+<li>Acesse o este <a href="https://www.apachefriends.org/pt_br/download.html" download>link</a> e instale o programa</li>
 <li>No terminal do SQL digite os seguintes <a href="Tutorial/DB.txt">códigos</a> que estão em um bloco de notas
   <li>Agora é so utiliza o <b><ins>mesa1.php</ins></b> e <b><ins>mesa2.php</ins></b> para controlar a aba do cliente e <b><ins>dono.php</ins></b> para controlar a aba do controle de pedidos
 
