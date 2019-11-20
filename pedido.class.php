@@ -27,7 +27,7 @@ class mesas{
 	}
 
 
-	public function setPedido(){
+	public function setPedido($i){
 
 
 	}
