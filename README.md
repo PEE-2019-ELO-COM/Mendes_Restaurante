@@ -2,6 +2,7 @@
 
 
 
+
 # Serviço de Restaurante :plate_with_cutlery:
 
 <img src="imagens/TelaInicial.jpg" width="100%" alt="Tela Inicial">
@@ -42,6 +43,11 @@
 <br>
 <img src="imagens/InterfaceGraficaDono3.png">
 
-
 ## Portabilidade
+<p>Apesar de ter colocado um exemplo com Restaurante Japones e 2 mesas, podemos facilmente adaptar para quantas mesas quisermos e qualquer tipo de restaurante</p>
 
+## Tutorial para utilizar o projeto
+<ol>Para poder utilizar este projeto tem que seguir o seguinte passo-a-passo:
+<li>Acesse o este <a href="https://www.apachefriends.org/pt_br/download.html">link</a> e instale o programa</li>
+<li>No terminal do SQL digite os seguintes <a href="Tutorial/DB.txt">códigos</a> que estão em um bloco de notas
+<li>Agora é so utilizar o <a href="mesa1.php">mesa1.php</a> e <a href="mesa2.php">mesa2.php</a> para controlar a aba do cliente e <a href="dono.php">dono.php</a> para controlar a aba do controle de pedidos
