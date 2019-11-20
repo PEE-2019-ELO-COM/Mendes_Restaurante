@@ -46,7 +46,7 @@
 <br>
 <img src="imagens/InterfaceGraficaDono3.png">
 
-## <bdi name="Portab">Portabilidade</bdi>
+## <a name="Portab">Portabilidade</a>
 <p>Apesar de ter colocado um exemplo com Restaurante Japones e 2 mesas, podemos facilmente adaptar para quantas mesas quisermos e qualquer tipo de restaurante</p>
 
 ## Tutorial para utilizar o projeto
