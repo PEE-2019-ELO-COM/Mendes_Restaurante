@@ -1,3 +1,0 @@
-.Modificar a tabela pedido para conter uma coluna a mais sobre o andamento do pedido (P(Pronto),W(Sendo Preparado))
-.Implementar POO na pagina do controle de pedido
-.Implementar botoes para dizer se o pedido esta pronto ou nao no controle de pedido
