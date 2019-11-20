@@ -41,3 +41,7 @@
 <img src="imagens/InterfaceGraficaDono2.png">
 <br>
 <img src="imagens/InterfaceGraficaDono3.png">
+
+
+## Portabilidade
+
