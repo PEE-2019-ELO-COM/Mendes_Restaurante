@@ -24,3 +24,5 @@
 <bdi>Segue imagens</bdi>
 
 <img src="imagens/InterfaceGraficaCliente1.png">
+
+<img src="imagens/InterfaceGraficaCliente2.png">
