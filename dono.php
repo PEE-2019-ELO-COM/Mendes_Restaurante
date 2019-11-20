@@ -14,11 +14,6 @@
 
 <body>
 
-
-
-
-
-
 <?php
 	require_once("pedido.class.php"); ///Chama a classe pedido
 	$obj=new mesas($link);
@@ -31,6 +26,29 @@ $sql=mysqli_query($link,$query);
 $nmesas=(int)mysqli_fetch_all($sql)[0][0];
 ?> <!--Defini quantas mesas tem no restaurante-->
 
+<header>
+
+
+
+
+
+
+
+
+
+
+</header>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -40,20 +58,21 @@ $npedidos=0;///Conta numero de pedidos
 
 for($i=0;$i<$nmesas;$i++){
 	
-
-	if(!empty($a=$obj->getPedido($i+1))){
+	$obj->setPedido($i+1);
+	if(!empty($a=$obj->getPedido())){
 		
 		foreach($a as $value){
 			$npedidos++;
 		}
 
 		echo "<table> <th colspan='2'>Mesa ".($i+1)."</th>
-			<td>Nome do Produto</td>
-			<td>Quantidade</td>";
+			<tr><td>Nome do Produto</td>
+			<td>Quantidade</td></tr>";
 
 		for($j=0;$j<$npedidos;$j++){
-			echo "<th><td>".$a[$j][0]."</td><td>".$a[$j][1]."</td></th>";
+			echo "<tr><td>".$a[$j][1]."</td><td>".$a[$j][2]."</td></tr>";
 		}
+		$npedidos=0;
 		echo "</table>";
 
 	}
