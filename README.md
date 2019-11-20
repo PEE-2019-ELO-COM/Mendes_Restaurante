@@ -1,7 +1,7 @@
 
 # Serviço de Restaurante :plate_with_cutlery:
 
-<img src="imagens/TelaInicial.jpg" width="100px" alt="Tela Inicial">
+<img src="imagens/TelaInicial.jpg" width="100%" alt="Tela Inicial">
 ## Motivação
 
 <p>Dos restaurantes que ja frequentei, a maioria dele possuía um garçom que ignorava as pessoas para não ser chamado ou então que prestava um mal atendimento.</p>
