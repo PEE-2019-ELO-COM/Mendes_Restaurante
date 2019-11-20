@@ -7,6 +7,9 @@
 
 <img src="imagens/TelaInicial.jpg" width="100%" alt="Tela Inicial">
 
+# Sumario
+<a href="README.md#Portab">Portabilidade</a>
+
 ## Motivação
 
 <p>Dos restaurantes que ja frequentei, a maioria dele possuía um garçom que ignorava as pessoas para não ser chamado ou então que prestava um mal atendimento.</p>
@@ -43,7 +46,7 @@
 <br>
 <img src="imagens/InterfaceGraficaDono3.png">
 
-## Portabilidade
+## <bdi name="Portab">Portabilidade</bdi>
 <p>Apesar de ter colocado um exemplo com Restaurante Japones e 2 mesas, podemos facilmente adaptar para quantas mesas quisermos e qualquer tipo de restaurante</p>
 
 ## Tutorial para utilizar o projeto
@@ -51,3 +54,4 @@
 <li>Acesse o este <a href="https://www.apachefriends.org/pt_br/download.html">link</a> e instale o programa</li>
 <li>No terminal do SQL digite os seguintes <a href="Tutorial/DB.txt">códigos</a> que estão em um bloco de notas
   <li>Agora é so utiliza o <b><ins>mesa1.php</ins></b> e <b><ins>mesa2.php</ins></b> para controlar a aba do cliente e <b><ins>dono.php</ins></b> para controlar a aba do controle de pedidos
+
