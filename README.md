@@ -1,10 +1,3 @@
-
-
-
-
-
-
-
 # Serviço de Restaurante :plate_with_cutlery:
 
 <img src="imagens/TelaInicial.jpg" width="100%" alt="Tela Inicial">
@@ -67,7 +60,7 @@
 ## <a name="Diag">Diagrama de Classes</a>
 <p>Abaixo nos temos o diagrama de classes implementado em PHP para este projeto</p>
 <br>
-<img src="imagens/DiagramaDeClasses.png" alt="Diagrama de Classes" align="center">
+<img src="imagens/DiagramaDeClasses.png" alt="Diagrama de Classes">
 
 ## <a name="Fluxograma">Fluxograma</a>
 
