@@ -1,6 +1,7 @@
 
 
 
+
 # Serviço de Restaurante :plate_with_cutlery:
 
 <img src="imagens/TelaInicial.jpg" width="100%" alt="Tela Inicial">
@@ -15,14 +16,22 @@
 
 ## Interface Gráfica
 ### Aba do cliente
-<ul>Aqui nós temos a interface gráfica do cliente, onde ele pode:<ul>
+<ul>Aqui nós temos a interface gráfica do cliente, onde ele pode:
 <li>A partir de um cardápio completo do restaurante, escolher a quantidade</li>
 <li>Ver quantos pedidos ja realizou e o total da sua conta ate o momento</li>
 <li>Chamar o garçom para que seja realizado um atendimento pessoal</li>
 <li>Pedir para fechar sua conta</li>
-
+</ul>
 <bdi>Segue imagens</bdi>
 
 <img src="imagens/InterfaceGraficaCliente1.png">
 
 <img src="imagens/InterfaceGraficaCliente2.png">
+
+
+### Aba do Controle de Pedidos
+<ul>Aqui nós temos a interface do operador do controle de pedidos, onde ele pode:
+<li>Visualizar na mesma hora o produto pedido pelo cliente e sua quantidade, onde estará indicado em qual mesa foi feito o pedido</li>
+<li>Emitir que o pedido ja esta pronto</li>
+<li>Caso todos os pedidos ja tenham sido emitidos, podemos clicar numa opção de finalizar o trabalho do dia, o qual salvará um arquivo com registro de todos os pedidos naquele dia e reproduzira na tela a quantidade de pedidos no dia e o quanto de dinheiro entrou</li>
+</ul>
