@@ -12,7 +12,7 @@
 <ol>
 <li><a href="#Moti">Portabilidade</a></li>
 <li><a href="#Impl">Implementação</a></li>
-<li><a herf="#Inter">Interface Gráfica</a></li>
+<li><a href="#Inter">Interface Gráfica</a></li>
 <li><a href="#Tuto">Tutorial</a></li>
 </ul>
 
