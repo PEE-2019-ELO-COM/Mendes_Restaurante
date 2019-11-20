@@ -8,7 +8,7 @@
 <img src="imagens/TelaInicial.jpg" width="100%" alt="Tela Inicial">
 
 # Sumario
-<a href="README.md#Portab">Portabilidade</a>
+<a href="#Portab">Portabilidade</a>
 
 ## Motivação
 
