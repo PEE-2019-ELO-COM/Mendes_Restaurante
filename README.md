@@ -7,10 +7,14 @@
 <li><a href="#Moti">Portabilidade</a></li>
 <li><a href="#Impl">Implementação</a></li>
 <li><a href="#Inter">Interface Gráfica</a></li>
+<ol>
+ <li><a href="Cli">Interface do Cliente</a></li>
+ <li><a href="Dono">Interface do Controle de Pedidos</a></li>
+ </ol>
 <li><a href="#Tuto">Tutorial</a></li>
 <li><a href="#Diag">Diagrama de Classes</a></li>
 <li><a href="Flux">Fluxograma</a></li>
-</ul>
+</ol>
 
 ## <a name="Moti">Motivação</a>
 
@@ -21,7 +25,7 @@
 <p>A linguagem escolhida para implementar esta plataforma foi a Web, sendo o principal motivo desta escolha o meu conhecimento prévio de como programar a interface gráfica, pois devido ao curto tempo e diversas outras demandas, não teria como aprender muita coisa para implementar as mínimas funcionalidades que desejava</p>
 
 ## <a name="Inter">Interface Gráfica</a>
-### Aba do cliente
+### <a name="Cli">Aba do cliente</a>
 <ul>Aqui nós temos a interface gráfica do cliente, onde ele pode:
 <li>A partir de um cardápio completo do restaurante, escolher a quantidade</li>
 <li>Ver quantos pedidos ja realizou e o total da sua conta ate o momento</li>
@@ -35,7 +39,7 @@
 <img src="imagens/InterfaceGraficaCliente2.png">
 
 
-### Aba do Controle de Pedidos
+### <a name="Dono">Aba do Controle de Pedidos</a>
 <ul>Aqui nós temos a interface do operador do controle de pedidos, onde ele pode:
 <li>Visualizar na mesma hora o produto pedido pelo cliente e sua quantidade, onde estará indicado em qual mesa foi feito o pedido</li>
 <li>Emitir que o pedido ja esta pronto</li>
