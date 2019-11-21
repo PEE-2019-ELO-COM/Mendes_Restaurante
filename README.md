@@ -9,6 +9,7 @@
 <li><a href="#Inter">Interface Gráfica</a></li>
 <li><a href="#Tuto">Tutorial</a></li>
 <li><a href="#Diag">Diagrama de Classes</a></li>
+<li><a href="Flux">Fluxograma</a></li>
 </ul>
 
 ## <a name="Moti">Motivação</a>
@@ -63,7 +64,7 @@
 <br>
 <img src="imagens/DiagramaDeClasses.png" alt="Diagrama de Classes">
 
-## <a name="Fluxograma">Fluxograma</a>
+## <a name="Flux">Fluxograma</a>
 
 <p>Abaixo nós temos o Fluxograma o projeto implementado</p>
 <img src="imagens/Fluxograma.png" alt="Fluxograma">
