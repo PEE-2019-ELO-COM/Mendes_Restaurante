@@ -11,6 +11,9 @@ create table preco(
 	nome var(50),
 	preco float);
 
+insert into preco (nome,preco)
+values (PhiSalm,6),(HPhiSalm,6),(UraSal,6),(PhiAtum,5),(HPhiAtum,5),(SushiSal,4.5),(SushiAtum,4),(SushiPeBr,4),(SashiSal,4.5),(SashiAtum,4),(SashiPeBr,4),(HaruCam,7.5),(HaruLeg,5),(TemPhi,10),(TemSal,9),(TemHPhiSal,11.5);
+
 create table pedidos(
 	contagem int primary key auto_increment,
 	Numero int,
