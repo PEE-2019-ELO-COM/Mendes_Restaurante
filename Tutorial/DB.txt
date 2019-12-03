@@ -1,18 +1,18 @@
+
+
 create database restaurante;
+
+
 
 create table mesas(
 	Numero int primary key auto_increment);
 
-insert into mesas
-values (1),(2);
 
 create table preco(
 	ID int primary key auto_increment,
-	nome var(50),
+	nome varchar(40),
 	preco float);
 
-insert into preco (nome,preco)
-values (PhiSalm,6),(HPhiSalm,6),(UraSal,6),(PhiAtum,5),(HPhiAtum,5),(SushiSal,4.5),(SushiAtum,4),(SushiPeBr,4),(SashiSal,4.5),(SashiAtum,4),(SashiPeBr,4),(HaruCam,7.5),(HaruLeg,5),(TemPhi,10),(TemSal,9),(TemHPhiSal,11.5);
 
 create table pedidos(
 	contagem int primary key auto_increment,
@@ -21,3 +21,12 @@ create table pedidos(
 	quantidade int,
 	Foreign Key (Numero) references mesas(Numero),
 	Foreign Key (ID) references preco(ID));	
+
+
+
+
+insert into mesas
+values (1),(2);
+
+insert into preco (nome,preco)
+values ("PhiSalm",6),("HPhiSalm",6),("UraSal",6),("PhiAtum",5),("HPhiAtum",5),("SushiSal",4.5),("SushiAtum",4),("SushiPeBr",4),("SashiSal",4.5),("SashiAtum",4),("SashiPeBr",4),("HaruCam",7.5),("HaruLeg",5),("TemPhi",10),("TemSal",9),("TemHPhiSal",11.5);
